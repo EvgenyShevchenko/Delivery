@@ -1,0 +1,47 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 0px 60px 0px;
+
+
+    &__logo {
+        margin-right: 35px;
+    }
+
+    &__nav {
+        display: flex;
+        align-items: center;
+    }
+
+    &__list {
+        display: flex;
+    }
+
+    &__li {
+        margin-right: 15px;
+
+        &:last-child {
+            margin: 0px
+        }
+    }
+
+    &__link {
+        font-size: 18px;
+        line-height: 21px;
+        color: #595959;
+    }
+
+
+    &__social {
+        display: flex;
+        align-items: center;
+
+        & li {
+            margin-right: 15px;
+        }
+    }
+}
+
+.footer-inner {
+    display: flex;
+}
