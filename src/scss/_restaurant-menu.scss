@@ -1,0 +1,50 @@
+.restaurant {
+    padding-top: 40px;
+}
+
+.restaurant-top {
+    display: flex;
+    align-items: center;
+    margin-bottom: 44px;
+
+    &__text {
+        margin-right: 30px;
+    }
+}
+
+.restaurant-cards {}
+
+.item-card {
+    &__desc-row2 {}
+
+    &__star-rating {}
+
+    &__star-icon {}
+
+    &__priece {}
+
+    &__product {}
+}
+
+
+.restaurant-item {
+    &__img {}
+}
+
+.restaurants-item {
+    &__text {}
+
+    &__text-row1 {}
+
+    &__title {}
+
+    &__desc {}
+
+    &__text-row2 {}
+
+    &__button {}
+
+    &__priece {}
+}
+
+.button {}

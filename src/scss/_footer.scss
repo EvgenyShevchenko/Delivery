@@ -1,7 +1,6 @@
 .footer {
-    display: flex;
-    justify-content: space-between;
     padding: 60px 0px 60px 0px;
+    background-color: #fff;
 
 
     &__logo {
@@ -44,4 +43,12 @@
 
 .footer-inner {
     display: flex;
+}
+
+.footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 10px 10px;
 }
