@@ -28,7 +28,7 @@
                 <button class="header__button-in button">
                     Войти
                 </button>
-                <button class="header__button-cart button">
+                <button class="header__button-cart button js-button-cart">
                     Корзина
                 </button>
             </div>
@@ -50,17 +50,89 @@
 <section class="restaurant-cards">
     <div class="restaurant-item">
         <img src="./img/pic/card-1.png" alt="rolls" class="restaurant-item__img">
-        <div class="restaurants-item__text">
-            <div class="restaurants-item__text-row1">
-                <h3 class="restaurants-item__title">Ролл угорь стандарт</h3>
-                <p class="restaurants-item__desc">Рис, угорь, соус унаги, кунжут, водоросли нори.</p>
+        <div class="restaurant-item__text">
+            <div class="restaurant-item__text-row1">
+                <h3 class="restaurant-item__title">Ролл угорь стандарт</h3>
+                <p class="restaurant-item__desc">Рис, угорь, соус унаги, кунжут, водоросли нори.</p>
             </div>
-            <div class="restaurants-item__text-row2">
-                <button class="restaurants-item__button button">В корзину</button>
-                <span class="restaurants-item__priece">250 ₽</span>
+            <div class="restaurant-item__text-row2">
+                <button class="restaurant-item__button button">В корзину</button>
+                <span class="restaurant-item__priece">250 ₽</span>
             </div>
         </div>
     </div>
+
+    <div class="restaurant-item">
+        <img src="./img/pic/card-2.png" alt="rolls" class="restaurant-item__img">
+        <div class="restaurant-item__text">
+            <div class="restaurant-item__text-row1">
+                <h3 class="restaurant-item__title">Калифорния лосось стандарт</h3>
+                <p class="restaurant-item__desc">Рис, лосось, авокадо, огурец, майонез, икра масаго, водоросли нори.</p>
+            </div>
+            <div class="restaurant-item__text-row2">
+                <button class="restaurant-item__button button">В корзину</button>
+                <span class="restaurant-item__priece">395 ₽</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="restaurant-item">
+        <img src="./img/pic/card-3.png" alt="rolls" class="restaurant-item__img">
+        <div class="restaurant-item__text">
+            <div class="restaurant-item__text-row1">
+                <h3 class="restaurant-item__title">Окинава стандарт</h3>
+                <p class="restaurant-item__desc"> Рис, креветка отварная, сыр сливочный, лосось, огурец свежий...</p>
+            </div>
+            <div class="restaurant-item__text-row2">
+                <button class="restaurant-item__button button">В корзину</button>
+                <span class="restaurant-item__priece">250 ₽</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="restaurant-item">
+        <img src="./img/pic/card-4.png" alt="rolls" class="restaurant-item__img">
+        <div class="restaurant-item__text">
+            <div class="restaurant-item__text-row1">
+                <h3 class="restaurant-item__title">Цезарь маки хl</h3>
+                <p class="restaurant-item__desc">Рис, куриная грудка копченая, икра масаго, томат, айсберг, соус
+                    цезарь...</p>
+            </div>
+            <div class="restaurant-item__text-row2">
+                <button class="restaurant-item__button button">В корзину</button>
+                <span class="restaurant-item__priece">250 ₽</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="restaurant-item">
+        <img src="./img/pic/card-5.png" alt="rolls" class="restaurant-item__img">
+        <div class="restaurant-item__text">
+            <div class="restaurant-item__text-row1">
+                <h3 class="restaurant-item__title">Ясай маки стандарт 185 г</h3>
+                <p class="restaurant-item__desc">Рис, помидор свежий, перец болгарский, авокадо, огурец, айсберг</p>
+            </div>
+            <div class="restaurant-item__text-row2">
+                <button class="restaurant-item__button button">В корзину</button>
+                <span class="restaurant-item__priece">250 ₽</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="restaurant-item">
+        <img src="./img/pic/card-6.png" alt="rolls" class="restaurant-item__img">
+        <div class="restaurant-item__text">
+            <div class="restaurant-item__text-row1">
+                <h3 class="restaurant-item__title">Ролл с креветкой стандарт</h3>
+                <p class="restaurant-item__desc">Рис, водоросли нори, креветки отварные, сыр сливочный, огурцы</p>
+            </div>
+            <div class="restaurant-item__text-row2">
+                <button class="restaurant-item__button button">В корзину</button>
+                <span class="restaurant-item__priece">250 ₽</span>
+            </div>
+        </div>
+    </div>
+
 </section>
 
             <!-- STOP WRITE CODE -->
@@ -104,7 +176,81 @@
     </div>
 </footer>
     </div>
-    <script src="js/libs.min.js"></script>
+    <div class="orverlay-cart js-overlay-cart">
+    <div class="modal-cart js-modal-cart">
+        <span class="modal__close js-close-cart"></span>
+        <div class="modal-cart__top">
+            <h2 class="modal-cart__title title">
+                Корзина
+            </h2>
+        </div>
+        <div class="modal-cart__body">
+            <div class="modal-cart__order">
+                <span class="modal-cart__order-name">Ролл угорь стандарт</span>
+                <div class="modal-cart__order-right">
+                    <span class="modal-cart__order-priece">250 ₽</span>
+                    <button class="modal-cart__order-button">-</button>
+                    <span class="modal-cart__order-number">1</span>
+                    <button class="modal-cart__order-button">+</button>
+                </div>
+            </div>
+
+            <div class="modal-cart__order">
+                <span class="modal-cart__order-name">Ролл угорь стандарт</span>
+                <div class="modal-cart__order-right">
+                    <span class="modal-cart__order-priece">250 ₽</span>
+                    <button class="modal-cart__order-button">-</button>
+                    <span class="modal-cart__order-number">1</span>
+                    <button class="modal-cart__order-button">+</button>
+                </div>
+            </div>
+
+            <div class="modal-cart__order">
+                <span class="modal-cart__order-name">Ролл угорь стандарт</span>
+
+                <div class="modal-cart__order-right">
+                    <span class="modal-cart__order-priece">250 ₽</span>
+                    <button class="modal-cart__order-button">-</button>
+                    <span class="modal-cart__order-number">1</span>
+                    <button class="modal-cart__order-button">+</button>
+                </div>
+            </div>
+
+            <div class="modal-cart__order">
+                <span class="modal-cart__order-name">Ролл угорь стандарт</span>
+
+                <div class="modal-cart__order-right">
+                    <span class="modal-cart__order-priece">250 ₽</span>
+                    <button class="modal-cart__order-button">-</button>
+                    <span class="modal-cart__order-number">1</span>
+                    <button class="modal-cart__order-button">+</button>
+                </div>
+            </div>
+
+            <div class="modal-cart__order">
+                <span class="modal-cart__order-name">Ролл угорь стандарт</span>
+
+                <div class="modal-cart__order-right">
+                    <span class="modal-cart__order-priece">250 ₽</span>
+                    <button class="modal-cart__order-button">-</button>
+                    <span class="modal-cart__order-number">1</span>
+                    <button class="modal-cart__order-button">+</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal-cart__footer">
+            <div class="modal-cart__sum">1250 ₽</div>
+            <div class="modal-cart__footer-buttons">
+                <button class="checkout button">Оформить заказ</button>
+                <button class="cancel button modal-cart__button">Отмена</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="js/libs.min.js"></script>
 <script src="js/main.min.js"></script>
 
 </body>
