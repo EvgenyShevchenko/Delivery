@@ -6,8 +6,21 @@
     .item-card {
         margin-right: 20px;
     }
-}
 
+    .restaurant-cards {
+        justify-content: center;
+    }
+
+    .restaurant-item {
+        flex-basis: 50%;
+        margin-right: 24px;
+        max-width: 384px;
+    }
+
+    .modal-cart {
+        max-width: 500px;
+    }
+}
 
 @media (max-width: 767.98px) {
     .main {
@@ -37,16 +50,22 @@
         width: auto;
     }
 
+    .restaurant-item {
+        flex-basis: 100%;
+        align-items: center;
+        justify-content: center;
+        margin-right: 0px;
+    }
+
+    .restaurant-cards {
+        margin-bottom: 0px;
+    }
+
     .footer-wrapper {
         flex-direction: column;
         align-items: center;
     }
 }
-
-
-
-
-
 
 @media (max-width: 575.98px) {
     .header__inner {
@@ -83,8 +102,6 @@
         font-size: 18px;
     }
 
-
-
     .item-card {
         max-width: 280px;
     }
@@ -93,9 +110,28 @@
         max-width: 280px;
     }
 
+    .restaurant-item {
+        max-width: 300px;
+    }
+
     .footer-inner {
         flex-direction: column;
         align-items: center;
+    }
+
+    .modal-cart {
+        max-width: 420px;
+        padding: 20px;
+    }
+
+    .modal__close {
+        position: absolute;
+        top: 10px;
+        right: 14px
+    }
+
+    .modal-cart__top {
+        margin-bottom: 5px;
     }
 }
 
@@ -111,5 +147,39 @@
     .footer__list {
         flex-direction: column;
         margin-bottom: 10px;
+    }
+
+    .modal-cart__body {
+        margin-bottom: 10px;
+    }
+
+    .modal-cart__order {
+        flex-direction: column;
+    }
+
+    .modal-cart__order-priece {
+        margin-right: 20px;
+    }
+
+    .modal-cart__footer {
+        flex-direction: column;
+    }
+
+    .modal-cart__footer-buttons {
+        display: flex;
+    }
+
+    .modal-cart__sum {
+        margin-bottom: 10px;
+    }
+
+    .checkout {
+        max-width: 98px;
+        padding: 8px 0px 8px 0px;
+        margin-right: 10px  ;
+    }
+
+    .cancel {
+        height: 64px;
     }
 }
